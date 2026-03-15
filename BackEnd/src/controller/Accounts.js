@@ -1,6 +1,6 @@
 const ValiDataAccouts = (DataAcc) => {
     let errors = []
-    if (!DataAcc.Firstname) {
+    if (!DataAcc.Fristname) {
         errors.push('กรุณากรอกชื่อ ☻')
     }
     if (!DataAcc.Lastname) {
@@ -9,7 +9,7 @@ const ValiDataAccouts = (DataAcc) => {
     if (!DataAcc.Age) {
         errors.push('กรุณากรอกอายุ ☻')
     }
-    if (!DataAcc.Username) {
+    if (!DataAcc.User) {
         errors.push('กรุณากรอกชื่อผู้ใช้ ☻')
     }
     if (!DataAcc.Password) {
@@ -21,3 +21,4 @@ const ValiDataAccouts = (DataAcc) => {
     return errors
 }
 module.exports = ValiDataAccouts
+
