@@ -7,7 +7,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors())
 
-app.use('/user',require('./routes/Accouts'))
+app.use('/Accounts',require('./routes/Accouts'))
 
 
 app.use(errHandler)

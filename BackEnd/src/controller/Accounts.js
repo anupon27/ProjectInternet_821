@@ -55,11 +55,10 @@ const createAccounts = async (req, res, next) => {
 
 const updateAccounts = async (req, res, next) => {
     try {
-        // ValiDataAccouts รับแค่ 1 ค่า (req.body) ตามที่คุณเขียนไว้ข้างบน
+        
         const errors = ValiDataAccouts(req.body) 
         if (errors.length > 0) return res.status(400).json({ message: 'กรอกข้อมูลไม่ครบ', errors })
 
-        // เพิ่มบรรทัดนี้เพื่อเรียกใช้ Model (ก่อนหน้านี้หายไป)
         const results = await ModelAccouts.updateAccounts(req.params.id, req.body)
         res.json({ message: 'อัปเดตบัญชีสำเร็จ', data: results })
     } catch (error) {
@@ -68,7 +67,6 @@ const updateAccounts = async (req, res, next) => {
 }
 const deleteAccounts = async (req, res, next) => {
     try {
-        // เอา results มารับค่าที่ลบเสร็จ เพื่อส่งกลับไปใน res.json
         const results = await ModelAccouts.deleteAccounts(req.params.id)
         res.json({ message: 'ลบบัญชีสำเร็จ', data: results })
     } catch (error) {

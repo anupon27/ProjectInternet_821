@@ -6,9 +6,9 @@ const getAllAccounts = async () => {
     return rows
 }
 
-const getBYIDAccounts = async (id) => {
+const getBYIDAccounts = async (Id_Accounts) => {
     const connection = await getConnection()
-    const [rows] = await connection.query('SELECT * FROM Accounts WHERE id = ?', [id])
+    const [rows] = await connection.query('SELECT * FROM Accounts WHERE Id_Accounts = ?', [Id_Accounts])
     return rows[0]
 }
 
@@ -19,16 +19,16 @@ const createAccounts = async (accountData) => {
     return Results
 }
 
-const updateAccounts = async (id, accountData) => {
+const updateAccounts = async (Id_Accounts, accountData) => {
     const connection = await getConnection()
     const {Fristname, Lastname, Age, User, Password, Email} = accountData
-    const Results = await connection.query('UPDATE Accounts SET Fristname = ?, Lastname = ?, Age = ?, User = ?, Password = ?, Email = ? WHERE id = ?', [Fristname, Lastname, Age, User, Password, Email, id])
+    const Results = await connection.query('UPDATE Accounts SET Fristname = ?, Lastname = ?, Age = ?, User = ?, Password = ?, Email = ? WHERE Id_Accounts = ?', [Fristname, Lastname, Age, User, Password, Email, Id_Accounts])
     return Results
 }
 
-const deleteAccounts = async (id) => {
+const deleteAccounts = async (Id_Accounts) => {
     const connection = await getConnection()
-    const Results = await connection.query('DELETE FROM Accounts WHERE id = ?', [id])
+    const Results = await connection.query('DELETE FROM Accounts WHERE Id_Accounts = ?', [Id_Accounts])
     return Results
 }
 
