@@ -7,4 +7,3 @@ app.listen(port, async () => {
     await getConnection()
     console.log('Server is running on port ' + port);
 })
-
