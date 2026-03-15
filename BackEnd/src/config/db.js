@@ -7,7 +7,7 @@ const getConnection = async () => {
         connection = await mysql.createConnection({
             host: process.env.DB_HOST || 'localhost',
             user: process.env.DB_USER || 'root',
-            password: process.env.DB_PASSWORD || 'LoveMySQL',
+            password: process.env.DB_PASS || 'LoveMySQL',
             database: process.env.DB_NAME || 'webdb',
             port: parseInt(process.env.DB_PORT) || 8820
         })
