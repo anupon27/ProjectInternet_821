@@ -21,7 +21,17 @@
         </div>
     </div>
     <div class="topbar">
-        <a href="../Login/Login.html">Logout</a>
-    </div>
+        <a href="#" onclick="logout()">Logout</a>
+</div>
+<script>
+  const user = localStorage.getItem('user')
+  if (!user) window.location.href = '../Login/Login.html'
+
+  function logout() {
+    localStorage.removeItem('user')
+    window.location.href = '../Login/Login.html'
+  }
+</script>
+
 </body>
 </html>
