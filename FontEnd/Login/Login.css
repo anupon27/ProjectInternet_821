@@ -99,3 +99,12 @@ form input[type="button"] {
 form input[type="button"]:hover {
   background: #00ccaa;
 }
+
+.error-msg {
+  color: #ff4d4d;
+  font-size: 12px;
+  margin-top: -6px;
+  margin-bottom: 4px;
+  display: block;
+  min-height: 16px;
+}

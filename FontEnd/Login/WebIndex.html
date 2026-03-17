@@ -8,7 +8,7 @@
   <title>Food Market - Login & Register</title>
   <link rel="stylesheet" href="Login.css">
   
-  
+
 </head>
 
 <body>
@@ -32,18 +32,25 @@
 
         <form id="registerForm">
           <h2>สมัครสมาชิก</h2>
-           <input type="text" id="regFirstname" placeholder="ชื่อจริง" required>
-          <input type="text" id="regLastname" placeholder="นามสกุล" required>
-          <input type="email" id="regEmail" placeholder="อีเมล" required>
-          <input type="text" id="regUsername" placeholder="ชื่อผู้ใช้" required>
-          <input type="number" id="regAGE" placeholder="อายุ" required>
-          <input type="password" id="regPassword" placeholder="รหัสผ่าน" required>
+          <input type="text" id="regFirstname" placeholder="ชื่อจริง">
+          <span class="error-msg" id="err-regFirstname"></span>
+          <input type="text" id="regLastname" placeholder="นามสกุล">
+          <span class="error-msg" id="err-regLastname"></span>
+          <input type="email" id="regEmail" placeholder="อีเมล">
+          <span class="error-msg" id="err-regEmail"></span>
+          <input type="text" id="regUsername" placeholder="ชื่อผู้ใช้">
+          <span class="error-msg" id="err-regUsername"></span>
+          <input type="number" id="regAGE" placeholder="อายุ">
+          <span class="error-msg" id="err-regAGE"></span>
+          <input type="password" id="regPassword" placeholder="รหัสผ่าน">
+          <span class="error-msg" id="err-regPassword"></span>
           <input type="button" value="สมัครสมาชิก" onclick="registerUser()">
         </form>
       </div>
     </div>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="Login.js"></script>
 </body>
 </html>

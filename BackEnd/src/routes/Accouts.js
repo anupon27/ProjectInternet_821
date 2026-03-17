@@ -7,5 +7,6 @@ router.get('/:id', controller.getBYIDAccounts)
 router.post('/', controller.createAccounts)
 router.put('/:id', controller.updateAccounts)
 router.delete('/:id', controller.deleteAccounts)
+router.post('/login', controller.loginAccounts)
 
 module.exports = router

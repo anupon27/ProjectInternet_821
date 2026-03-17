@@ -74,10 +74,27 @@ const deleteAccounts = async (req, res, next) => {
     }
 }
 
+const loginAccounts = async (req, res, next) => {
+    try {
+        const { User, Password } = req.body
+        if (!User || !Password) {
+            return res.status(400).json({ message: 'กรุณากรอกชื่อผู้ใช้และรหัสผ่าน' })
+        }
+        const user = await ModelAccouts.getByUserAccounts(User)
+        if (!user || user.Password !== Password) {
+            return res.status(401).json({ message: 'ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง' })
+        }
+        res.json({ message: 'เข้าสู่ระบบสำเร็จ', data: { Id_Accounts: user.Id_Accounts, User: user.User } })
+    } catch (error) {
+        next(error)
+    }
+}
+
 module.exports = {
     getAllAccounts,
     getBYIDAccounts,
     createAccounts,
+    loginAccounts,
     updateAccounts,
     deleteAccounts
 }

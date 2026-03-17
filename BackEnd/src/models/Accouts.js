@@ -32,4 +32,10 @@ const deleteAccounts = async (Id_Accounts) => {
     return Results
 }
 
-module.exports = {getAllAccounts, getBYIDAccounts, createAccounts, updateAccounts, deleteAccounts}
+const getByUserAccounts = async (User) => {
+    const connection = await getConnection()
+    const [rows] = await connection.query('SELECT * FROM Accounts WHERE User = ?', [User])
+    return rows[0]
+}
+
+module.exports = {getAllAccounts, getBYIDAccounts, createAccounts, updateAccounts, deleteAccounts, getByUserAccounts}
