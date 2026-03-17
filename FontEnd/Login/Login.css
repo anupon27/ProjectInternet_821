@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #0f0f0f;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+/* กล่องหลัก */
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ฟอร์มอยู่กลาง */
+.form-side {
+  background: #1a1a1a;
+  padding: 40px;
+  border-radius: 20px;
+  width: 350px;
+  box-shadow: 0 0 30px rgba(0, 255, 204, 0.15);
+}
+
+/* ปุ่มสลับ */
+.btn-box {
+  display: flex;
+  margin-bottom: 25px;
+  background: #111;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.toggle-btn {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: transparent;
+  color: #aaa;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.toggle-btn.active {
+  background: #00ffcc;
+  color: #000;
+  font-weight: bold;
+}
+
+/* form */
+form {
+  display: none;
+  flex-direction: column;
+}
+
+form.active {
+  display: flex;
+}
+
+form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* input */
+form input {
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #2a2a2a;
+  color: #fff;
+  outline: none;
+  transition: 0.3s;
+}
+
+form input:focus {
+  border: 1px solid #00ffcc;
+}
+
+/* ปุ่ม */
+form input[type="button"] {
+  background: #00ffcc;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+form input[type="button"]:hover {
+  background: #00ccaa;
+}

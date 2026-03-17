@@ -1,13 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Internet of things</title>
-    <meta kw="Internet">
-    <meta author="Natthaphat & Anuphon">
-    <link rel="stylesheet" href="Webindex.css">
+  <meta charset="UTF-8">
+  <meta kw="Food cord center">
+  <meta author="ซุปหน่อไม้ by absolute">
+  <meta name="viewport" content="width=device-width, initial-scale=1.1">
+  <title>Food Market - Login & Register</title>
+  <link rel="stylesheet" href="Login.css">
+  
 </head>
+
 <body>
+
+  <div class="container">
+    <div class="image-side"></div>
+
+    <div class="form-side">
+      <div class="btn-box">
+        <button class="toggle-btn active" onclick="showLogin()">เข้าสู่ระบบ</button>
+        <button class="toggle-btn" onclick="showRegister()">สมัครสมาชิก</button>
+      </div>
+
+      <div class="form-box">
+        <form id="loginForm" class="active">
+          <h2>เข้าสู่ระบบ</h2>
+          <input type="email" id="loginEmail" placeholder="อีเมล" required>
+          <input type="password" id="loginPassword" placeholder="รหัสผ่าน" required>
+          <input type="button" value="เข้าสู่ระบบ" onclick="loginUser()">
+        </form>
+
+        <form id="registerForm">
+          <h2>สมัครสมาชิก</h2>
+          <input type="text" id="regFirstname" placeholder="ชื่อจริง" required>
+          <input type="text" id="regLastname" placeholder="นามสกุล" required>
+          <input type="email" id="regEmail" placeholder="อีเมล" required>
+          <input type="password" id="regPassword" placeholder="รหัสผ่าน" required>
+          <input type="button" value="สมัครสมาชิก" onclick="registerUser()">
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="Login.js"></script>
 </body>
 </html>
