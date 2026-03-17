@@ -4,6 +4,7 @@ const cors = require('cors');
 const errHandler = require('./middlewares/errHandler')
 const app = express();
 
+
 app.use(bodyParser.json());
 app.use(cors())
 

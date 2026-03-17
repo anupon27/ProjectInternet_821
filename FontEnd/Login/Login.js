@@ -17,16 +17,5 @@
       toggleBtns[0].classList.remove("active");
     }
 
-    function registerUser() {
-      let email = document.getElementById("regEmail").value;
-      let password = document.getElementById("regPassword").value;
 
-      if(email && password) {
-        localStorage.setItem("userEmail", email);
-        localStorage.setItem("userPassword", password);
-        alert("Sucess to login! Pls join with us");
-        showLogin();
-      } else {
-        alert("กรุณากรอกข้อมูลให้ครบถ้วน");
-      }
-    }
+    
