@@ -1,0 +1,70 @@
+/* main จัดกลาง */
+.main {
+    margin-left: 0;
+    margin-top: 60px;
+    width: 100%;
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* กล่องเมนู */
+.menu-box {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+/* การ์ด */
+.card {
+    width: 200px;
+    height: 150px;
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+/* hover เท่ๆ */
+.card:hover {
+    background-color: #fff;
+    color: #000;
+    transform: translateY(-5px);
+}
+
+/* Topbar ติดบน */
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+}
+
+/* ปุ่ม Logout */
+.topbar a {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+
+    color: #000000;
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+/* hover */
+.topbar a:hover {
+    background-color: #fff;
+    color: #000;
+}
