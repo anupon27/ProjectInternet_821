@@ -43,5 +43,12 @@ const updateReports = async (ID_Account, reportData) => {
     return Results
 }
 
+const deleteReports = async (ID_Report) => {
+    const connection = await getConnection()
+    const [results] = await connection.query('DELETE FROM Report WHERE ID_Report = ?', [ID_Report])
+    return results
+}
 
-module.exports = {getAllReports, getBYIDReports, createReports, updateReports}
+
+
+module.exports = {getAllReports, getBYIDReports, createReports, updateReports, deleteReports}

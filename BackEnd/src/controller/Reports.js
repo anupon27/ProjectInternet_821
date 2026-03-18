@@ -8,6 +8,7 @@ const ValiDataReports = (DataReport) => {
     if (!DataReport.Report_Discription) {
         errors.push('กรุณากรอกคำอธิบายรายงาน ☻')
     }
+    return errors
 }
 
 const getAllReports = async (req, res, next) => {
