@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Report</title>
     <meta kw="Internet">
     <meta author="Natthaphat & Anuphon">
     <link rel="stylesheet" href="Lobbie.css">
@@ -23,15 +23,7 @@
     <div class="topbar">
         <a href="#" onclick="logout()">Logout</a>
 </div>
-<script>
-  const user = localStorage.getItem('user')
-  if (!user) window.location.href = '../Login/Login.html'
-
-  function logout() {
-    localStorage.removeItem('user')
-    window.location.href = '../Login/Login.html'
-  }
-</script>
+    <script src="Lobbie.js"></script>
 
 </body>
 </html>

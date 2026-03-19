@@ -19,17 +19,14 @@
     <div class="topbar">
         <span class="menu-btn" id="menuBtn">&#9776;</span>
         <h2>รายงาน</h2>
-        <a href="../Login/WebIndex.html">Logout</a>
+        <a href="#" onclick="logout()">Logout</a>
     </div>
 
     <div class="main">
         <form>
-            <label>ชื่อผู้ใช้:</label><br>
-            <input type="text" name="username"><br>
-            <label>อุปกรณ์:</label><br>
-            <input type="text" name="device"><br>
-            <label>ปัญหาการชำรุด:</label><br>
-            <input type="text" name="issue"><br>
+            <label>ID_Items</label><br>
+            <input type="number" name="ID_Items"><br>
+            
 
 
             <button type="submit">Submit</button>
@@ -37,6 +34,9 @@
         </form>
     </div>
     <script src="Report.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    
 </body>
 
 </html>
