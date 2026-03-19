@@ -25,18 +25,21 @@
     <div class="main">
         <form>
             <label>ID_Items</label><br>
-            <input type="number" name="ID_Items"><br>
-            
-
-
-            <button type="submit">Submit</button>
-
+            <input type="number" id="ID_Items" name="ID_Items" placeholder="กรอก ID ครุภัณฑ์"><br>
+            <span id="err-items" class="err-items"></span>
+            <button type="button" onclick="IDFind()">ค้นหา</button>
         </form>
+    </div>
+
+    <div id="result">
+            <p><strong>ชื่อ:</strong> <span id="res-name"></span></p>
+            <p><strong>Stock:</strong> <span id="res-stock"></span></p>
+        </div>
     </div>
     <script src="Report.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
-    
+
 </body>
 
 </html>

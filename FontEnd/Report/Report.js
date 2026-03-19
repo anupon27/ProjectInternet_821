@@ -1,3 +1,5 @@
+const api = 'http://localhost:8000'
+
 const menuBtn = document.getElementById("menuBtn");
 const sideBar = document.getElementById("sidebar");
 
@@ -17,16 +19,30 @@ const user = localStorage.getItem('user')
     window.location.href = '../Login/Login.html'
   }
 
-async function IDFind () {
+
+
+  
+async function IDFind() {
     const Id_Items = document.getElementById('ID_Items').value
+    const errEl   = document.getElementById('err-items')
+    const result  = document.getElementById('result')
+
+    errEl.textContent = ''
+    result.style.display = 'none'
+
     if (!Id_Items.trim()) {
-        alert('กรุณากรอก ID ของครุภัณฑ์')
+        errEl.textContent = 'กรุณากรอก ID ของครุภัณฑ์'
         return
     }
+
     try {
-        const response = await axios.get(`http://localhost:3000/items/${Id_Items}`)
-        console.log(response.data)
+        const response = await axios.get(`${api}/Items/${Id_Items}`)
+        const data = response.data
+        document.getElementById('res-name').textContent  = data.Item_name
+        document.getElementById('res-stock').textContent = data.Stock
+        result.style.display = 'block'
+
     } catch (error) {
-        console.error(error)
+        errEl.textContent = 'ไม่พบ ID ครุภัณฑ์นี้'
     }
 }

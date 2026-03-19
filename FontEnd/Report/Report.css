@@ -6,8 +6,9 @@
 }
 
 body{
-    background:#f4f6f9;
+    background: #408A71 ;
 }
+
 
 /* SIDEBAR */
 
@@ -80,7 +81,7 @@ form{
     padding:30px;
     width:350px;
     border-radius:10px;
-    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+    box-shadow:0 4px 10px #091413;
 }
 
 form label{
@@ -115,4 +116,27 @@ button{
 
 button:hover{
     background:#000000;
+}
+
+
+.main {
+magin top: 80px;
+display: flex;
+flex-direction: column;
+align-items: center;
+jutify-content: center;
+}
+
+.err-items{
+    color: #DE1A58; 
+    font-size:14px;
+}
+
+.result {
+    display: none;
+    margin-top: 20px;
+    width: 350px;
+    background: #091413;
+    padding: 20px;
+    border-radius: 10px;
 }
