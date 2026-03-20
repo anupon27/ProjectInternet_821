@@ -25,13 +25,12 @@
     <div class="main">
         <form>
             <label>เลขไอดีของครุภัณฑ์</label><br>
-            <input type="number" id="ID_Items" name="ID_Items" placeholder="กรอก ID ครุภัณฑ์"><br>
+            <input type="text" id="ID_Items" name="ID_Items" placeholder="กรอก ID เช่น #1101"><br>
             <span id="err-items" class="err-items"></span>
             <button type="button" onclick="IDFind()">ค้นหา</button>
         </form>
         <div id="result" class="result">
             <p><strong>ชื่อ:</strong> <span id="res-name"></span></p>
-            <p><strong>Stock:</strong> <span id="res-stock"></span></p>
             <div class="action-btns">
                 <a href="../Borrow/Borrow.html"><button type="button" class="btn-borrow">ยืม-คืน</button></a>
                 <a href="../Report/Report.html"><button type="button" class="btn-report">แจ้งชำรุด/แจ้งซ่อม</button></a>

@@ -31,12 +31,10 @@ async function IDFind() {
         errEl.textContent = 'กรุณากรอก ID ของครุภัณฑ์'
         return
     }
-
     try {
-        const response = await axios.get(`${api}/Items/${Id_Items}`)
+        const response = await axios.get(`${api}/ItemsType/${encodeURIComponent(Id_Items)}`)
         const data = response.data
-        document.getElementById('res-name').textContent  = data.Item_name
-        document.getElementById('res-stock').textContent = data.Stock
+        document.getElementById('res-name').textContent = data.DuraticlesName
         result.style.display = 'block'
 
     } catch (error) {
