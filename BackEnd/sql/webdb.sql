@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: db:3306
--- Generation Time: Mar 20, 2026 at 10:01 AM
+-- Generation Time: Mar 20, 2026 at 12:30 PM
 -- Server version: 8.0.45
 -- PHP Version: 8.3.30
 
@@ -85,9 +85,9 @@ CREATE TABLE `Durable_articles` (
 --
 
 INSERT INTO `Durable_articles` (`No`, `ItemstypeData`, `DuraticelsID`, `Duraticelstype`, `DuraticlesName`) VALUES
-(1, 1, '#1101', 'Computer', 'Intelcore i9-14900k'),
-(2, 1, '#1102', 'Computer', 'Intelcorei5-7200u'),
-(3, 1, '#1103', 'Computer', 'Pentium 4'),
+(1, 1, '#1101', 'Computer', 'Computer cpu Intelcore i9-14900k'),
+(2, 1, '#1102', 'Computer', 'Computer cpu Intelcorei5-7200u'),
+(3, 1, '#1103', 'Computer', 'Computer cpu Pentium 4'),
 (4, 1, '#1104', 'Notebook', 'Notebook omen'),
 (5, 1, '#1105', 'Notebook', 'Notebook Isus'),
 (6, 2, '#2101', 'Webcam', 'Logitech C922'),
