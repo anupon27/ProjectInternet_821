@@ -40,8 +40,18 @@ body{
 }
 
 /* hover เท่ๆ */
-.card:hover {
-    background-color: #8C5A3C;
+#cardB:hover {
+    background-color: #44A194;
+    color: #000;
+    transform: translateY(-5px);
+}
+#cardS:hover {
+    background-color: #FFC300;
+    color: #000;
+    transform: translateY(-5px);
+}
+#cardR:hover {
+    background-color: #FF7070;
     color: #000;
     transform: translateY(-5px);
 }

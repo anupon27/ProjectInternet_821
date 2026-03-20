@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta kw="Internet">
+    <meta author="Natthaphat & Anuphon">
+    <link rel="stylesheet" href="Status.css">
+</head>
+
+<body>
+    <div class="sidebar" id="sidebar">
+        <a href="../lobby/Lobbie.html">หน้าหลัก</a>
+        <a href="../Report/Report.html">รายงาน</a>
+    </div>
+
+    <div class="topbar">
+        <span class="menu-btn" id="menuBtn">&#9776;</span>
+        <h2>สถานะการทำรายการ</h2>
+        <a href="#" onclick="logout()">Logout</a>
+
+        <div class="search-box">
+            <input type="text" id="searchUser" placeholder="Search username">
+            <button onclick="searchUser()">Search</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="left">
+            <h2>Ask</h2>
+        </div>
+        <div class="main">
+            <h3>Status</h3>
+
+            <div class="status">
+                <span class="red"></span>
+                <p>อุปกรณ์ชำรุด</p>
+            </div>
+            <div class="status">
+                <span class="green"></span>
+                <p>อุปกรณ์กำลังซ่อม</p>
+            </div>
+
+            <div class="status">
+                <span class="yellow"></span>
+                <p>อุปกรณ์พร้อมใช้งาน</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="Status.js"></script>
+</body>
+
+</html>
