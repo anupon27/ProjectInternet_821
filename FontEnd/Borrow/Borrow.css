@@ -1,0 +1,168 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: linear-gradient(160deg, #F4F0E4 0%, #44A194 40%, #537D96 75%,#EC8F8D 100%);
+    min-height: 100vh;
+}
+
+
+/* SIDEBAR */
+
+.sidebar{
+    position:fixed;
+    left:-220px;
+    top:0;
+    width:220px;
+    height:100%;
+    background:#1e293b;
+    padding-top:60px;
+    transition:0.3s;
+}
+
+.sidebar.active{
+    left:0;
+}
+
+.sidebar a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:15px 20px;
+    font-size:16px;
+}
+
+.sidebar a:hover{
+    background:#334155;
+}
+
+/* TOPBAR */
+
+.topbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:60px;
+    background:#02050c;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 20px;
+}
+
+.menu-btn{
+    font-size:26px;
+    cursor:pointer;
+}
+
+.topbar a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* MAIN */
+
+
+/* FORM */
+
+form{
+    background:white;
+    padding:30px;
+    width:350px;
+    border-radius:10px;
+    box-shadow:0 4px 10px #091413;
+}
+
+form label{
+    font-weight:bold;
+}
+
+form input{
+    width:100%;
+    padding:10px;
+    margin:8px 0 15px 0;
+    border-radius:5px;
+    border:1px solid #ccc;
+}
+
+form input:focus{
+    outline:none;
+    border:1px solid #000000;
+}
+
+/* BUTTON */
+
+button{
+    width:100%;
+    padding:10px;
+    border:none;
+    background:#000000;
+    color:white;
+    font-size:16px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#000000;
+}
+
+
+.main {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.err-items{
+    color: #DE1A58; 
+    font-size:14px;
+}
+
+.result {
+    display: none;
+    margin-top: 20px;
+    width: 350px;
+    background: #FFF6F6;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.action-btns {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+
+
+.action-btns button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+}
+
+
+
+.btn-borrow  { background: #2196F3; }
+.btn-report  { background: #FF9800; }
+
+
+.btn-borrow:hover  { background: #1565C0; }
+.btn-report:hover  { background: #E65100; }
+
+

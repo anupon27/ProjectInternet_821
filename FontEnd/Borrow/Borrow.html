@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report</title>
+    <meta kw="Internet">
+    <meta author="Natthaphat & Anuphon">
+    <link rel="stylesheet" href="Borrow.css">
+</head>
+
+<body>
+    <div class="sidebar" id="sidebar">
+        <a href="../lobby/Lobbie.html">หน้าหลัก</a>
+    </div>
+
+    <div class="topbar">
+        <span class="menu-btn" id="menuBtn">&#9776;</span>
+        <h2>การยืมอุปกรณ์ครุภัณฑ์</h2>
+        <a href="#" onclick="logout()">Logout</a>
+    </div>
+
+    <div class="main">
+       <form id="borrowForm" class="active">
+          <h2>การยืม</h2>
+            <h4>กรุณากรอกชื่อผู้ใช้</h4>
+            <input type="text" id="usename" placeholder="ชื่อผู้ใช้" required>
+            <h4>กรุณากรอกข้อมูลการยืมอุปกรณ์</h4>
+            <input type="text" id="weapon" placeholder="อุปกรที่ยืม" required>
+            
+
+            <input type="button" value="ยืนยันการยืม" onclick="handleLogin()">
+        </form>
+
+
+
+
+    </div>
+    <script src="Borrow.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+
+</body>
+
+</html>
