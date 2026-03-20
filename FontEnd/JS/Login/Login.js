@@ -58,7 +58,7 @@ async function handleLogin() {
   try {
     const res = await axios.post(`${API}/Accounts/login`, { User, Password })
     localStorage.setItem('user', JSON.stringify(res.data.data))
-    window.location.href = '../Lobby/Lobbie.html'
+    window.location.href = '../../Html/Lobby/Lobby.html'
   } catch (error) {
     const msg = error.response?.data?.message || 'เกิดข้อผิดพลาด'
     setError('loginPassword', msg)
