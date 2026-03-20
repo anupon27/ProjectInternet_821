@@ -1,14 +1,14 @@
 const { getConnection } = require('../config/db')
 
-const getBYIDItems = async (Id_Items) => {
+const getBYIDItemsType = async (Id_Items) => {
     const connection = await getConnection()
     const sql = `
-        SELECT Items.*, Item_name , Stock
-        FROM Items
-        WHERE Items.Id_Items = ?
+        SELECT Durable_articles.*, DuraticlesName
+        FROM Durable_articles
+        WHERE Durable_articles.DuraticlesID = ?
     `
     const [rows] = await connection.query(sql, [Id_Items])
     return rows[0]
 }
 
-module.exports = {getBYIDItems}
+module.exports = {getBYIDItemsType}
