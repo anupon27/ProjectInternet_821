@@ -136,3 +136,34 @@ button:hover{
     padding: 20px;
     border-radius: 10px;
 }
+
+.action-btns {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+//--
+
+.action-btns button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+}
+
+//--
+
+.btn-borrow  { background: #2196F3; }
+.btn-report  { background: #FF9800; }
+
+
+.btn-borrow:hover  { background: #1565C0; }
+.btn-report:hover  { background: #E65100; }
+
+
+//--
