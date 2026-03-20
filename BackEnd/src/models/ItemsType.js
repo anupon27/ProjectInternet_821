@@ -3,7 +3,7 @@ const { getConnection } = require('../config/db')
 const getBYIDItemsType = async (Id_Items) => {
     const connection = await getConnection()
     const sql = `
-        SELECT DuraticlesName
+        SELECT DuraticlesName , Duraticelstype
         FROM Durable_articles
         WHERE DuraticelsID = ?
     `

@@ -3,9 +3,6 @@ const api = 'http://localhost:8000'
 const menuBtn = document.getElementById("menuBtn");
 const sideBar = document.getElementById("sidebar");
 
-const validateItems = () => {
-
-}
 
 menuBtn.onclick = function () { 
     sideBar.classList.toggle("active");
@@ -35,6 +32,7 @@ async function IDFind() {
         const response = await axios.get(`${api}/ItemsType/${encodeURIComponent(Id_Items)}`)
         const data = response.data
         document.getElementById('res-name').textContent = data.DuraticlesName
+        document.getElementById('res-type').textContent = data.Duraticelstype
         result.style.display = 'block'
 
     } catch (error) {
