@@ -1,7 +1,7 @@
 
 body{
-    background: #408A71 ;
-    
+    background: linear-gradient(160deg, #F4F0E4 0%, #44A194 40%, #537D96 75%,#EC8F8D 100%);
+    min-height: 100vh;
 }
 
 
@@ -40,11 +40,6 @@ body{
 }
 
 /* hover เท่ๆ */
-#cardB:hover {
-    background-color: #44A194;
-    color: #000;
-    transform: translateY(-5px);
-}
 #cardS:hover {
     background-color: #FFC300;
     color: #000;
