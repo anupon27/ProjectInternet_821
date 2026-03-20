@@ -12,7 +12,7 @@
 
 <body>
     <div class="sidebar" id="sidebar">
-        <a href="../Lobbie/Lobbie.html">หน้าหลัก</a>
+        <a href="../lobby/Lobbie.html">หน้าหลัก</a>
         <a href="../Status/Status.html">สเตตัส</a>
     </div>
 
@@ -29,13 +29,13 @@
             <span id="err-items" class="err-items"></span>
             <button type="button" onclick="IDFind()">ค้นหา</button>
         </form>
-    </div>
-
-    <div id="result">
+        <div id="result" class="result">
             <p><strong>ชื่อ:</strong> <span id="res-name"></span></p>
             <p><strong>Stock:</strong> <span id="res-stock"></span></p>
         </div>
     </div>
+
+
     <script src="Report.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 

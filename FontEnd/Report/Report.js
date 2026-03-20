@@ -18,9 +18,6 @@ const user = localStorage.getItem('user')
     localStorage.removeItem('user')
     window.location.href = '../Login/Login.html'
   }
-
-
-
   
 async function IDFind() {
     const Id_Items = document.getElementById('ID_Items').value
