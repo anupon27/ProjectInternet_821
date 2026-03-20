@@ -1,4 +1,4 @@
-const modelitems = require('../models/ItemsType')
+const modelitems = require('../models/ItemsType.js')
 
 
 const getBYIDItemsType = async (req, res, next) => {
